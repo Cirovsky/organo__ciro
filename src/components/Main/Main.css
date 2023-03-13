@@ -1,0 +1,14 @@
+.container__titulo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.botao__adicionar{
+    background-color: #6278F7;
+    color: white;
+    padding: 2.175em 2.1em;
+    border-style: none;
+    border: solid 1px black;
+    border-radius: 2em;
+    justify-self: flex-end;
+}

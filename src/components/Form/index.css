@@ -1,0 +1,17 @@
+.cria-card{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background-color: #dddcdc;
+    width: 68.5%;
+    margin: 5em auto;
+    padding: 2em 6em;
+    border-radius: 1em;
+    box-shadow: .25em .5em .75em rgba(0, 0, 0, 0.3);
+}
+
+.cria-card h2{
+    font-size: 1.475em;
+    font-weight: 400;
+    align-self: flex-start;
+}

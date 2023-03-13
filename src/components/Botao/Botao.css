@@ -1,0 +1,12 @@
+.cria-card__botao{
+    background-color: #6278F7;
+    color: white;
+    padding: 2.175em 2.1em;
+    border-style: none;
+    border-radius: .75em;
+    align-self: flex-start;
+    margin-top: 3em;
+}
+.cria-card__botao:hover{
+    color: #95FFD4;
+}

@@ -1,49 +1,26 @@
-.cria-card{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-items: center;
-    background-color: #F6F6F6;
-    width: 68.5%;
-    margin: 5em auto;
-    padding: 2em 6em;
-    border-radius: 1em;
-    box-shadow: .25em .5em .75em rgba(0, 0, 0, 0.3);
-}
 
-.cria-card h2{
-    font-size: 1.475em;
-    font-weight: 400;
-    align-self: flex-start;
+.card{
+    list-style-type: none;
+    padding: 0;
 }
-
-.cria-card__linha{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
+.card__banner{
+    background: #57C278;
+    height: 5.75em;
+    width: 16.25em;
 }
-
-.cria-card__linha label{
-    margin-top: 1.2em;
-    font-size: 0.9em;
-    font-family: "Montserrat";
+.card__dados{
+    background: white;
+    height: 11.125em;
+    font-family: 'Montserrat';
+    text-align: center;
+}
+.card__dados h3{
+    font-size: 1.125em;
     font-weight: 600;
+    color: #6278F7;
 }
-.cria-card__linha input{
+.card__dados p{
+    font-size: 1em;
     font-weight: 400;
-    font-family: "Montserrat";
-    margin-top: .6em;
-    border-style: none;
-    height: 6em;
-    padding: 0 2em ;
-    box-shadow: .5em .5em 1.5em rgba(0, 0, 0, 0.1);;
-}
-.cria-card__botao{
-    background-color: #6278F7;
-    color: white;
-    padding: 2.175em 2.1em;
-    border-style: none;
-    border-radius: .75em;
-    align-self: flex-start;
-    margin-top: 3em;
+    color: #212121;
 }
