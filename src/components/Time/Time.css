@@ -2,7 +2,11 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: rgba(0, 200, 111, 0.15);
+}
+
+.container__time h2{
+    margin: 0;
+    font-size: 1.475em;
 }
 .card__setor__lista{
     display: flex;
@@ -10,4 +14,9 @@
     column-gap: 1.5em;
     list-style-type: none;
     padding: 0;
+}
+.tracinho__time{
+    margin-top: .25em;
+    width: 2em;
+    height: .25em;
 }
