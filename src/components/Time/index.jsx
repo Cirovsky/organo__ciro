@@ -15,11 +15,16 @@ const Time = (props) => {
     )
            
         return (
-        <section className="container__time" id={props.id} style={{backgroundColor: fundo}}>
+        <section className="container__time" id={props.id} style={{backgroundColor: fundo, 
+        display: `${props.arrayCard.length > 0? 'flex': 'none'}`}}>
             <h2>{props.titulo}</h2>
             <div className="tracinho__time" style={{backgroundColor: destaque}}></div>
             <ul className="card__setor__lista">
-                {arrayCard.map(card => <Card key={card.nome+card.cargo} nome={card.nome} cargo={card.cargo} corDestaque={destaque} imagem = {card.imagem}/>)}
+                {arrayCard.map(card => <Card 
+                                            key={card.nome+card.cargo} 
+                                            nome={card.nome} cargo={card.cargo} 
+                                            corDestaque={destaque} 
+                                            imagem = {card.imagem}/>)}
             </ul>
 
 

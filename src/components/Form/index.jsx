@@ -33,7 +33,7 @@ function Form(props){
             setTime(times[0]);
         }
     return(
-        <section>
+        <section className="formulario" style={{display: `${props.visualizar? 'block': 'none'}`}}>
             <form onSubmit={capturarDados} className="cria-card">
                 <h2>Preencha os dados para criar o card do colaborador.</h2>
                 <CampoTexto type={"text"} id={"Nome"} 

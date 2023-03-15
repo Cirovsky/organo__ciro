@@ -1,3 +1,7 @@
+.formulario{
+    display: none;
+}
+
 .cria-card{
     display: flex;
     flex-wrap: wrap;

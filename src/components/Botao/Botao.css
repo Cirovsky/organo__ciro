@@ -10,3 +10,8 @@
 .cria-card__botao:hover{
     color: #95FFD4;
 }
+.botao-invisivel__banner{
+    background-color: red;
+    position: absolute;
+    top:200px;
+}

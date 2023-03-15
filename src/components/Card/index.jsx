@@ -1,7 +1,6 @@
 import "./Card.css";
 
 function Card(props){
-    console.log(props.imagem)
     const urlImage = props.imagem === ""? '/images/user.png' : props.imagem;
     return(
         <li className="card">

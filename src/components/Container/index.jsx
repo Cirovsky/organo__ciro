@@ -27,22 +27,11 @@ function Container(props){
                 arrayTime[index].arrayCard.push(card);
             }
         })
-        console.log(arrayTime.map(time=> time.arrayCard));
         
     }
     if(colaboradores != false){
         initCards();
     }
-    
-    /* if(props.card){
-        if(titulosTime.includes(props.card.time)){
-            const index = titulosTime.indexOf(props.card.time);
-            arrayTime[index].arrayCard.push(props.card);
-        }else{
-            arrayTime.push(new time(props.card.time));
-            arrayTime[arrayTime.length -1].arrayCard.push(props.card);
-        }
-    } */
 
     return(
         <div className="container">

@@ -2,9 +2,8 @@
     display: grid;
     align-items: center;
     width: 82.5%;
-    margin: auto;
     grid-template-columns: 1fr 3fr 1fr;
-    margin-bottom: 5em;
+    margin: 5em auto;
 }
 
 .container__titulo h2{
@@ -23,10 +22,9 @@
     padding-left: auto;
     background-color: #6278F7;
     color: white;
-    padding: 2.175em 2.1em;
     border-style: none;
     border: solid 2px white;
-    border-radius: 3em;
+    border-radius: 6em;
     justify-self: flex-end;
     box-shadow: .25em .5em .75em rgba(0, 0, 0, 0.4);
 }
@@ -37,4 +35,8 @@
     background-color: #6278F7;
     width: 4em;
     height: .25em;
+}
+
+.botao_add-colaborador{
+    width: 6em;
 }
