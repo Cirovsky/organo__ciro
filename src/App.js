@@ -8,6 +8,7 @@ import './App.css';
 
 function App() {
   const [colaboradores, setColaboradores] = useState([]);
+  const [formulario, setFormulario] = useState(false);
   const adicionarColaborador = colaborador =>{
     setColaboradores([...colaboradores, colaborador]);
     console.log(colaboradores);
@@ -17,12 +18,14 @@ function App() {
 
   return (
     <>
-      <Banner />
+      <Banner/>
       <main className="container">
-        <Form aoSubmeter={adicionarColaborador} times = {nomeTimes}/>
+        <Form aoSubmeter={adicionarColaborador} times = {nomeTimes} visualizar={formulario}/>
         <div className="container__titulo">
           <h2>Minha Organização</h2>
-          <Botao className="botao__adicionar" />
+          <Botao className="botao__adicionar" visualizar={formulario} abrirForm={form => setFormulario(form)}>
+            <img src='/images/addcolaborador.svg' className='botao_add-colaborador'/>
+          </Botao>
           <div className="tracinho"></div>
         </div>
 
