@@ -15,8 +15,7 @@ const Time = (props) => {
     )
            
         return (
-        <section className="container__time" id={props.id} style={{backgroundColor: fundo, 
-        display: `${props.arrayCard.length > 0? 'flex': 'none'}`}}>
+        props.arrayCard.length > 0 && <section className="container__time" id={props.id} style={{backgroundColor: fundo}}>
             <h2>{props.titulo}</h2>
             <div className="tracinho__time" style={{backgroundColor: destaque}}></div>
             <ul className="card__setor__lista">
@@ -29,7 +28,7 @@ const Time = (props) => {
 
 
         </section>
-    )
+    );
 }
 
 export default Time;

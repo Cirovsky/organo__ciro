@@ -30,7 +30,7 @@ function Form(props){
             setNome("");
             setCargo("");
             setImagem("");
-            setTime(times[0]);
+            setTime("");
         }
     return(
         <section className="formulario" style={{display: `${props.visualizar? 'block': 'none'}`}}>

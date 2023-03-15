@@ -7,10 +7,10 @@ const Botao = (props) =>{
     
     return(
         <button className={`${props.className? props.className : "cria-card__botao"}`}
-            onClick={aoClicar}
-        >
+            onClick={props.app? aoClicar : null}
+>
             {props.children}
         </button>
-    )
+    );
 }
 export default Botao;
