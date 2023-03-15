@@ -1,22 +1,26 @@
 .container__time{
     display: flex;
     flex-direction: column;
-    align-items: center;
+    min-height: 21.333em;
 }
 
 .container__time h2{
     margin: 0;
     font-size: 1.475em;
+    align-self: center;
 }
 .card__setor__lista{
     display: flex;
-    align-items: center;
+    justify-content: start;
     column-gap: 1.5em;
+    row-gap: 1.5em;
     list-style-type: none;
-    padding: 0;
+    padding: 0 8em;
+    flex-wrap: wrap;
 }
 .tracinho__time{
     margin-top: .25em;
     width: 2em;
     height: .25em;
+    align-self: center;
 }

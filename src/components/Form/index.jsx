@@ -6,16 +6,9 @@ import { useState } from "react";
 
 function Form(props){
     
-    const cards = localStorage.cards? JSON.parse(localStorage.cards) : [];
+    const colaboradores = localStorage.colaboradores? JSON.parse(localStorage.colaboradores) : [];
     
-    const times = [
-        "Programação", 
-        "Front-End", 
-        "DataScience", 
-        "Devops", 
-        "UX e Design", 
-        "Mobile", 
-        "Inovação e Gestão"]
+    const times = props.times;
     
         
         const [nome, setNome] = useState("");
@@ -25,15 +18,15 @@ function Form(props){
         
         const capturarDados = (evento) =>{
             evento.preventDefault();
-            const card = {
+            const colaborador = {
                 nome : nome,
                 cargo: cargo,
                 imagem: imagem,
                 time: time,
             };
-            props.aoSubmeter(card);
-            cards.push(card);
-            localStorage.setItem("cards", JSON.stringify(cards));
+            props.aoSubmeter(colaborador);
+            colaboradores.push(colaborador);
+            localStorage.setItem("colaboradores", JSON.stringify(colaboradores));
             setNome("");
             setCargo("");
             setImagem("");

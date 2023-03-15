@@ -1,36 +1,36 @@
-export const corTime = [
+export const times = [
     {
-        nome: "programacao",
+        nome: "Programação",
         destaque: "#57C278",
         fundo: "#D9F7E9",
     },
     {
-        nome: "front-end",
+        nome: "Front-End",
         destaque: "#82CFFA",
         fundo: "#E8F8FF",
     },
     {
-        nome: "datascience",
+        nome: "DataScience",
         destaque: "#A6D157",
         fundo: "#F0F8E2",
     },
     {
-        nome: "devops",
+        nome: "Devops",
         destaque: "#E06B69",
         fundo: "#FDE7E8",
     },
     {
-        nome: "uxedesign",
+        nome: "Ux e Design",
         destaque: "#DB6EBF",
         fundo: "#FAE9F5",
     },
     {
-        nome: "mobile",
+        nome: "Mobile",
         destaque: "#FFBA05",
         fundo: "#FFF5D9",
     },
     {
-        nome: "inovacaoegestao",
+        nome: "Inovacao e Gestao",
         destaque: "#FF8A29",
         fundo: "#FFEEDF",
     },

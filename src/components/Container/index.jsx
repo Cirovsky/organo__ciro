@@ -12,30 +12,25 @@ function Container(props){
             return texto.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase().split(" ").join("");
         }
     }
+
     const arrayTime =[];
-    const cards = localStorage.length > 0? JSON.parse(localStorage.cards): "";
+    const colaboradores = localStorage.getItem('colaboradores')? JSON.parse(localStorage.colaboradores): false;
 
     function initCards(){
-        let titulosTime = []
-        if(arrayTime.length > 0){
-            titulosTime = arrayTime.map(time => time.titulo);
-        }else{
-            titulosTime.push(cards[0].time);
-            arrayTime.push(new time(cards[0].time));
-        }
-        cards.forEach(card =>{
+        const titulosTime = props.times.map(time => time.nome);
+        titulosTime.forEach(titulo => {
+            arrayTime.push(new time(titulo));
+        });
+        colaboradores.forEach(card => {
             if(titulosTime.includes(card.time)){
                 const index = titulosTime.indexOf(card.time);
                 arrayTime[index].arrayCard.push(card);
-            }else{
-                titulosTime.push(card.time);
-                arrayTime.push(new time(card.time));
-                arrayTime[arrayTime.length -1].arrayCard.push(card);
             }
         })
+        console.log(arrayTime.map(time=> time.arrayCard));
         
     }
-    if(cards != ""){
+    if(colaboradores != false){
         initCards();
     }
     
@@ -51,7 +46,7 @@ function Container(props){
 
     return(
         <div className="container">
-            {arrayTime.map( time => <Time titulo={time.titulo} id={time.id} arrayCard={time.arrayCard}/>)}
+            {arrayTime.map( time => <Time key={time.id} titulo={time.titulo} id={time.id} arrayCard={time.arrayCard} times = {props.times}/>)}
         </div>
     )
 }

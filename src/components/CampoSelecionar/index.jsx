@@ -10,7 +10,7 @@ const CampoSelecionar = (props) => {
     return(
         <div className="cria-card__linha">
             <label htmlFor={props.id}>{props.name}</label>
-            <select onClick={aoSelecionar}  id={props.id} name={props.name} className="selecionar">
+            <select onChange={aoSelecionar}  id={props.id} name={props.name} className="selecionar">
                 {exibirListaTimes}
             </select>
         </div>

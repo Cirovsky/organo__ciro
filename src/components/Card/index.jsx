@@ -1,14 +1,15 @@
 import "./Card.css";
 
 function Card(props){
+    console.log(props.imagem)
+    const urlImage = props.imagem === ""? '/images/user.png' : props.imagem;
     return(
-        <li className="card" key={props.nome}>
-            <div className="card__banner" style={{background: props.corDestaque}}></div>
-            <div className="card__dados">
-                <img src=""/>
+        <li className="card">
+            <div className="card__banner" style={{background: props.corDestaque}}>
+                <img src={urlImage} className="avatar" alt="imagem do avatar"/>
+            </div>            
                 <h3>{props.nome}</h3>
                 <p>{props.cargo}</p>
-            </div>
         </li>
     );
 }
